@@ -26,8 +26,8 @@ namespace Lab4NET.Controllers
             var viewClubModel = new NewViewModel
             {
                 SportClubs = await _context.SportClubs
-              .OrderBy(spclub => spclub.Title)
-              .ToListAsync()
+                  .OrderBy(spclub => spclub.Title)
+                  .ToListAsync()
             };
 
             if (Id != null)
